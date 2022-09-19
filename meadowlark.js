@@ -1,13 +1,7 @@
 const express = require('express')
 const { engine } = require('express-handlebars')
 
-const fortunes = [
-    "Conquer your fears or they will conquer you.",
-    "Rivers need springs.",
-    "Do not fear what you don't know.",
-    "You will have a pleasant surprise.",
-    "Whenever possible, keep it simple.",
-  ]
+const fortune = require('/lib/fortune')
 
 const app = express()
 

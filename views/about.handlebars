@@ -6,3 +6,7 @@
 {{/if}}
 {{{body}}}
 </body>
+
+app.get('/about', (req, res) => {
+  res.render('about', { fortune: fortune.getFortune() } )
+})
